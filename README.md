@@ -6,5 +6,11 @@
 * Entity Framework 6 as ORM (Code First development);
 * Unit of Work + Generic Repository Patterns;
 * Dependency Injection Using Ninject;
-* Automapper
-* jQuery Unobtrusive Ajax;
+* AutoMapper;
+* jQuery Unobtrusive Ajax.
+
+##  TODO
+* Add Unit Tests projects;
+* Add Services project;
+* Add "Edit" page for users to edit photo info;
+* Add "Edit" page for admins to edit users info;
