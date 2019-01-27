@@ -11,5 +11,6 @@
 
 ##  TODO
 * Add Unit Tests projects;
+* Add Services project;
 * Add "Edit" page for users to edit photo info;
 * Add "Edit" page for admins to edit users info;

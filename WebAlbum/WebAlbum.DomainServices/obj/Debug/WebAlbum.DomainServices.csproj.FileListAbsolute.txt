@@ -1,6 +1,0 @@
-C:\Users\User\Desktop\WebAlbum\WebAlbum.DomainServices\bin\Debug\WebAlbum.DomainServices.dll
-C:\Users\User\Desktop\WebAlbum\WebAlbum.DomainServices\bin\Debug\WebAlbum.DomainServices.pdb
-C:\Users\User\Desktop\WebAlbum\WebAlbum.DomainServices\obj\Debug\WebAlbum.DomainServices.csproj.CoreCompileInputs.cache
-C:\Users\User\Desktop\WebAlbum\WebAlbum.DomainServices\obj\Debug\WebAlbum.DomainServices.dll
-C:\Users\User\Desktop\WebAlbum\WebAlbum.DomainServices\obj\Debug\WebAlbum.DomainServices.pdb
-C:\Users\User\Desktop\WebAlbum\WebAlbum.DomainServices\obj\Debug\WebAlbum.DomainServices.csprojAssemblyReference.cache
