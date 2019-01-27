@@ -1,0 +1,6 @@
+﻿@if (HttpContext.Current.User.IsInRole("Admin"))
+{
+    <li>
+        @Html.ActionLink("Admin Page", "Index", "Home", new { Area = "Admin" }, new { })
+    </li>
+}

@@ -1,0 +1,97 @@
+﻿@model IEnumerable<WebAlbum.Web.Areas.Admin.Models.IndexAdminViewModel>
+@{
+    var options = new AjaxOptions()
+    {
+        UpdateTargetId = "update",
+        LoadingElementId = "loading",
+        LoadingElementDuration = 500,
+        HttpMethod = "Post"
+    };
+}
+<p class="text-info">@TempData["result"]</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.UserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmailConfirmed)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LockoutEnabled)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LockoutEndDateUtc)
+        </th>
+        <th>
+            Albums Count
+        </th>
+        <th>
+            Manage
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @(item.EmailConfirmed ? "Yes" : "No")
+            </td>
+            <td>
+                @(item.LockoutEnabled ? "Yes" : "No")
+            </td>
+            <td>
+                @if (DateTime.Compare(item.LockoutEndDateUtc,
+                    Convert.ToDateTime("01.01.0001 0:00:00")) > 0)
+                {
+                    @Html.DisplayFor(modelItem => item.LockoutEndDateUtc)
+                }
+                else
+                {
+                    @("Not acceptable")
+                }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Albums.Count)
+            </td>
+            <td>
+                @if (DateTime.Compare(item.LockoutEndDateUtc, DateTime.UtcNow) > 0)
+                {
+                    using (Ajax.BeginForm("UnlockUser", "Home", new {userName = item.UserName}, options))
+                    {
+                        @Html.AntiForgeryToken()
+                        <button type="submit" class="btn btn-default" value="Unlock">
+                            <span class="glyphicon glyphicon-ok-circle text-success" aria-hidden="true"></span>
+                            Unlock
+                        </button>
+                    }
+                }
+                else
+                {
+                    using (Ajax.BeginForm("BlockUser", "Home", new { userName = item.UserName }, options))
+                    {
+                        @Html.AntiForgeryToken()
+                        <button type="submit" class="btn btn-default" value="Lockout">
+                            <span class="glyphicon glyphicon-ban-circle text-danger" aria-hidden="true"></span>
+                            Lockout
+                        </button>
+                    }
+                }
+
+                @*@Html.ActionLink("Edit", "Edit", new {  id=item.Id  }) |
+                    @Html.ActionLink("Details", "Details", new {  id=item.Id  }) |
+                    @Html.ActionLink("Delete", "Delete", new {  id=item.Id  })*@
+            </td>
+        </tr>
+    }
+
+</table>

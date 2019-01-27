@@ -1,0 +1,16 @@
+C:\Users\User\Desktop\WebAlbum\WebAlbum.DomainModel\bin\Debug\WebAlbum.DomainModel.dll.config
+C:\Users\User\Desktop\WebAlbum\WebAlbum.DomainModel\bin\Debug\WebAlbum.DomainModel.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.DomainModel\bin\Debug\WebAlbum.DomainModel.pdb
+C:\Users\User\Desktop\WebAlbum\WebAlbum.DomainModel\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.DomainModel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.DomainModel\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.DomainModel\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.DomainModel\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.DomainModel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.DomainModel\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.DomainModel\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.DomainModel\obj\Debug\WebAlbum.DomainModel.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\WebAlbum\WebAlbum.DomainModel\obj\Debug\WebAlbum.DomainModel.csproj.CopyComplete
+C:\Users\User\Desktop\WebAlbum\WebAlbum.DomainModel\obj\Debug\WebAlbum.DomainModel.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.DomainModel\obj\Debug\WebAlbum.DomainModel.pdb
+C:\Users\User\Desktop\WebAlbum\WebAlbum.DomainModel\obj\Debug\WebAlbum.DomainModel.csprojAssemblyReference.cache

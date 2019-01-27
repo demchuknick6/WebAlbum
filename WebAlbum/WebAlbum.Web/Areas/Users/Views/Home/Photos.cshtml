@@ -1,0 +1,61 @@
+﻿@model WebAlbum.Web.Areas.Users.Models.PhotoListViewModel
+
+@{
+    ViewBag.Title = "Photos";
+}
+@if (Model.UserName != null && Model.AlbumTitle != null)
+{
+    <h2>
+        <a href="@Url.Action("Albums", "Home", new {userName = Model.UserName})">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        </a>
+        @Model.UserName's Photos from @Model.AlbumTitle Album
+    </h2>
+}
+<hr/>
+<ul style="list-style:none;" class="row" id="my-images">
+    @foreach (var item in Model.Photos)
+    {
+        <li class="col-xs-6 col-sm-5 col-md-4 col-lg-3">
+            <div class="item thumbnail preview-container">
+                <div class="preview-img-container">
+                    <img src="@item.Content" alt="@item.PhotoTitle" class="preview-img" id="myImg" />
+                </div>
+            </div>
+        </li>
+    }
+</ul>
+<div class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg" alt="">
+    <div id="caption"></div>
+</div>
+
+
+@section Scripts {
+    <script type="text/javascript">
+        var images = document.querySelectorAll('#my-images img');
+
+        var modal = document.querySelector('.modal');
+        var modalImg = document.getElementById("modalImg");
+        var captionText = document.getElementById("caption");
+
+        images.forEach(function (image) {
+            image.addEventListener('click', function (event) {
+                modal.style.display = 'flex';
+                modalImg.src = event.target.src;
+                captionText.innerHTML = event.target.alt;
+            });
+        });
+
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        modal.addEventListener('click', function () {
+            this.style.display = 'none';
+        });
+    </script>
+}

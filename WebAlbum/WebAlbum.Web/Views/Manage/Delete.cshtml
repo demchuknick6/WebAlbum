@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Delete account";
+}
+
+<h2>Delete</h2>
+
+<h4>Are you sure you want to delete this account?</h4>
+<div class="text-info">@ViewBag.Message</div>
+<div>
+    @using (Html.BeginForm("Delete", "Manage", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+        <div>
+            @Html.ActionLink("Cancel", "Index") |
+            <button type="submit" class="btn btn-default" value="Delete">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                Delete
+            </button>
+        </div>
+    }
+</div>

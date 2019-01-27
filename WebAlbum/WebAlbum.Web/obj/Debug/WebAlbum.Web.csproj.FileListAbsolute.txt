@@ -1,0 +1,262 @@
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\WebAlbum.Web.dll.config
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\WebAlbum.Web.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\WebAlbum.Web.pdb
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\csc.exe
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\csc.exe.config
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\csc.rsp
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\csi.exe
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\csi.exe.config
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\csi.rsp
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\System.AppContext.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\System.Console.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\System.IO.Compression.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\System.IO.Pipes.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\System.Security.Claims.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\System.ValueTuple.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\System.Xml.XPath.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\vbc.exe
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\vbc.exe.config
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\vbc.rsp
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\VBCSCompiler.exe
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Antlr3.Runtime.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\AutoMapper.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\EntityFramework.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Microsoft.Owin.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Microsoft.Owin.Security.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Newtonsoft.Json.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Owin.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\System.ValueTuple.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\System.Web.Helpers.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\System.Web.Mvc.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\System.Web.Optimization.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\System.Web.Razor.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\System.Web.WebPages.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\WebAlbum.DataAccess.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\WebAlbum.DomainModel.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\WebAlbum.DomainServices.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\WebGrease.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\WebAlbum.DataAccess.pdb
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\WebAlbum.DataAccess.dll.config
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\WebAlbum.DomainModel.pdb
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\WebAlbum.DomainModel.dll.config
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\WebAlbum.DomainServices.pdb
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\AutoMapper.pdb
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\AutoMapper.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\System.ValueTuple.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\System.Web.Helpers.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\System.Web.Mvc.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\System.Web.Optimization.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\System.Web.Razor.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\System.Web.WebPages.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Newtonsoft.Json.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Antlr3.Runtime.pdb
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\EntityFramework.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Microsoft.Owin.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Microsoft.Owin.Security.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\obj\Debug\WebAlbum.Web.csprojAssemblyReference.cache
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\obj\Debug\WebAlbum.Web.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\obj\Debug\WebAlbum.Web.csproj.CopyComplete
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\obj\Debug\WebAlbum.Web.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\obj\Debug\WebAlbum.Web.pdb
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Ninject.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Ninject.Web.Common.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Ninject.Web.Common.WebHost.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Ninject.Web.Mvc.dll
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Ninject.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Ninject.Web.Common.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Ninject.Web.Common.WebHost.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\Ninject.Web.Mvc.xml
+C:\Users\User\Desktop\WebAlbum\WebAlbum.Web\bin\WebActivatorEx.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\WebAlbum.Web.dll.config
+E:\WebAlbum(without services)\WebAlbum.Web\bin\WebAlbum.Web.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\WebAlbum.Web.pdb
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\csc.exe
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\csc.exe.config
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\csc.rsp
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\csi.exe
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\csi.exe.config
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\csi.rsp
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\Microsoft.Managed.Core.targets
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\System.AppContext.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\System.Collections.Immutable.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\System.Console.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\System.IO.Compression.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\System.IO.FileSystem.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\System.IO.Pipes.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\System.Reflection.Metadata.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\System.Security.AccessControl.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\System.Security.Claims.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\System.Security.Principal.Windows.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\System.ValueTuple.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\System.Xml.XmlDocument.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\System.Xml.XPath.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\vbc.exe
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\vbc.exe.config
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\vbc.rsp
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\VBCSCompiler.exe
+E:\WebAlbum(without services)\WebAlbum.Web\bin\roslyn\VBCSCompiler.exe.config
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Antlr3.Runtime.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\AutoMapper.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\EntityFramework.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\EntityFramework.SqlServer.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Microsoft.AspNet.Identity.Core.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Microsoft.Owin.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Microsoft.Owin.Security.Cookies.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Microsoft.Owin.Security.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Microsoft.Owin.Security.Facebook.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Microsoft.Owin.Security.Google.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Microsoft.Owin.Security.OAuth.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Microsoft.Owin.Security.Twitter.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Microsoft.Web.Infrastructure.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Newtonsoft.Json.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Ninject.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Ninject.Web.Common.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Ninject.Web.Common.WebHost.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Ninject.Web.Mvc.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Owin.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\System.Diagnostics.DiagnosticSource.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\System.ValueTuple.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\System.Web.Helpers.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\System.Web.Mvc.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\System.Web.Optimization.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\System.Web.Razor.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\System.Web.WebPages.Deployment.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\System.Web.WebPages.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\System.Web.WebPages.Razor.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\WebActivatorEx.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\WebAlbum.DataAccess.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\WebAlbum.DomainModel.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\WebAlbum.DomainServices.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\WebGrease.dll
+E:\WebAlbum(without services)\WebAlbum.Web\bin\WebAlbum.DataAccess.pdb
+E:\WebAlbum(without services)\WebAlbum.Web\bin\WebAlbum.DataAccess.dll.config
+E:\WebAlbum(without services)\WebAlbum.Web\bin\WebAlbum.DomainModel.pdb
+E:\WebAlbum(without services)\WebAlbum.Web\bin\WebAlbum.DomainModel.dll.config
+E:\WebAlbum(without services)\WebAlbum.Web\bin\WebAlbum.DomainServices.pdb
+E:\WebAlbum(without services)\WebAlbum.Web\bin\AutoMapper.pdb
+E:\WebAlbum(without services)\WebAlbum.Web\bin\AutoMapper.xml
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Ninject.xml
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Ninject.Web.Common.xml
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Ninject.Web.Common.WebHost.xml
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Ninject.Web.Mvc.xml
+E:\WebAlbum(without services)\WebAlbum.Web\bin\System.ValueTuple.xml
+E:\WebAlbum(without services)\WebAlbum.Web\bin\System.Web.Helpers.xml
+E:\WebAlbum(without services)\WebAlbum.Web\bin\System.Web.Mvc.xml
+E:\WebAlbum(without services)\WebAlbum.Web\bin\System.Web.Optimization.xml
+E:\WebAlbum(without services)\WebAlbum.Web\bin\System.Web.Razor.xml
+E:\WebAlbum(without services)\WebAlbum.Web\bin\System.Web.WebPages.xml
+E:\WebAlbum(without services)\WebAlbum.Web\bin\System.Web.WebPages.Deployment.xml
+E:\WebAlbum(without services)\WebAlbum.Web\bin\System.Web.WebPages.Razor.xml
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Newtonsoft.Json.xml
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Antlr3.Runtime.pdb
+E:\WebAlbum(without services)\WebAlbum.Web\bin\EntityFramework.xml
+E:\WebAlbum(without services)\WebAlbum.Web\bin\EntityFramework.SqlServer.xml
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Microsoft.AspNet.Identity.Core.xml
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Microsoft.Owin.xml
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Microsoft.Owin.Security.xml
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Microsoft.Owin.Security.Facebook.xml
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Microsoft.Owin.Security.Cookies.xml
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Microsoft.Owin.Security.Google.xml
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Microsoft.Owin.Security.Twitter.xml
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Microsoft.Owin.Security.OAuth.xml
+E:\WebAlbum(without services)\WebAlbum.Web\bin\System.Diagnostics.DiagnosticSource.xml
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+E:\WebAlbum(without services)\WebAlbum.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\WebAlbum(without services)\WebAlbum.Web\obj\Debug\WebAlbum.Web.csprojAssemblyReference.cache
+E:\WebAlbum(without services)\WebAlbum.Web\obj\Debug\WebAlbum.Web.csproj.CoreCompileInputs.cache
+E:\WebAlbum(without services)\WebAlbum.Web\obj\Debug\WebAlbum.Web.csproj.CopyComplete
+E:\WebAlbum(without services)\WebAlbum.Web\obj\Debug\WebAlbum.Web.dll
+E:\WebAlbum(without services)\WebAlbum.Web\obj\Debug\WebAlbum.Web.pdb

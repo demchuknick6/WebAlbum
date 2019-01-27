@@ -1,0 +1,28 @@
+﻿@model WebAlbum.Web.Models.Albums.AlbumListViewModel
+
+<p class="text-info">@TempData["result"]</p>
+<h4>Existing Albums</h4>
+<ul style="list-style:none;" class="row">
+    @foreach (var album in Model.Albums)
+    {
+        <li class="col-xs-6 col-sm-5 col-md-4 col-lg-3">
+            <blockquote>
+                @if (album.Public)
+                {
+                    <h4>
+                        @Html.ActionLink(album.AlbumTitle, "Album", new {id = album.AlbumId})
+                    </h4>
+                }
+                else
+                {
+                    <h4>
+                        <a href="@Url.Action("Album", new {id = album.AlbumId})">
+                            @album.AlbumTitle
+                            <span class="glyphicon glyphicon-lock" aria-hidden="true" style="font-size: 60%"></span>
+                        </a>
+                    </h4>
+                }
+            </blockquote>
+        </li>
+    }
+</ul>
