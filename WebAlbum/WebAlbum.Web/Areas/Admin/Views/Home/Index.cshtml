@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Users";
+}
+
+<h2>Users</h2>
+
+<div id="loading" style="display: none">
+    <img src="~/Content/Images/loading.gif" alt="loadingImg" />
+</div>
+<div id="update">
+    @Html.Action("_Users", "Home")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

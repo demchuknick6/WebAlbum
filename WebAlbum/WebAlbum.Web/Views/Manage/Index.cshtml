@@ -1,0 +1,26 @@
+﻿@model WebAlbum.Web.Models.Manage.IndexViewModel
+@{
+    ViewBag.Title = "Manage";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<p class="text-info">@ViewBag.Message</p>
+<div>
+    <h4>Change your account settings</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Password:
+        </dt>
+        <dd>
+            [ @Html.ActionLink("Change your password", "ChangePassword") ]
+        </dd>
+        <dt>
+            Account:
+        </dt>
+        <dd>
+            [ @Html.ActionLink("Delete your account", "Delete") ]
+        </dd>
+    </dl>
+</div>
