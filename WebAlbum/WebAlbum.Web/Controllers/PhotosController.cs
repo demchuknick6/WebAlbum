@@ -6,6 +6,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using AutoMapper;
+using Microsoft.AspNet.Identity;
 using WebAlbum.DomainModel;
 using WebAlbum.DomainServices;
 using WebAlbum.Web.Models.Photos;
@@ -18,6 +19,7 @@ namespace WebAlbum.Web.Controllers
         private readonly IGenericRepository<Photo> _photoRepository;
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
+        public Func<string> GetUserId;
         private const string ErrorMsg = "An error has occurred while processing your request. ";
 
 
@@ -27,6 +29,7 @@ namespace WebAlbum.Web.Controllers
             _photoRepository = photoRepository;
             _mapper = mapper;
             _unitOfWork = unitOfWork;
+            GetUserId = () => System.Web.HttpContext.Current.User.Identity.GetUserId();
         }
 
         [ChildActionOnly]
@@ -35,7 +38,7 @@ namespace WebAlbum.Web.Controllers
             if (albumId == null)
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             var photo = new NewPhotoViewModel {AlbumId = (int) albumId};
-            return PartialView(photo);
+                return PartialView(photo);
         }
 
         [HttpPost]
@@ -86,9 +89,10 @@ namespace WebAlbum.Web.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             try
             {
+                var userId = GetUserId();
                 var photos = _mapper.Map<IEnumerable<Photo>, List<PhotoViewModel>>
                 (_photoRepository
-                    .AsQueryable().Where(u => u.AlbumId == albumId)
+                    .AsQueryable().Where(u => u.AlbumId == albumId && u.Album.UserId == userId)
                     .OrderBy(p => p.DateCreated).ToList()).ToList();
                 return PartialView(photos);
             }
@@ -104,10 +108,13 @@ namespace WebAlbum.Web.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             try
             {
-                var photo = _mapper.Map<Photo, PhotoViewModel>(_photoRepository.GetByKey(id));
+                var photo = _photoRepository.GetByKey(id);
                 if (photo == null)
                     return HttpNotFound();
-                return View(photo);
+                if (photo.Album.UserId != GetUserId())
+                    return new HttpStatusCodeResult(HttpStatusCode.Forbidden);
+                var model = _mapper.Map<Photo, PhotoViewModel>(photo);
+                return View("Edit",model);
             }
             catch (Exception e)
             {
@@ -115,6 +122,7 @@ namespace WebAlbum.Web.Controllers
                 return RedirectToAction("Index","Albums");
             }
         }
+        //Add Edit post
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -125,7 +133,7 @@ namespace WebAlbum.Web.Controllers
             try
             {
                 var photo = _photoRepository.GetByKey(id);
-                if (photo.AlbumId == albumId)
+                if (photo.AlbumId == albumId && photo.Album.UserId == GetUserId())
                 {
                     _photoRepository.DeleteByKey(id);
                     _unitOfWork.Save();
@@ -139,42 +147,7 @@ namespace WebAlbum.Web.Controllers
                 TempData["result"] = ErrorMsg + e.Message;
             }
 
-            return RedirectToAction("_Photos", new {albumId = albumId});
+            return RedirectToAction("Index", "Albums");
         }
-
-        // GET: Photos
-        /*public ActionResult Index()
-        {
-            return View();
-        }
-
-        // GET: Photos/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
-
-        // GET: Photos/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: Photos/Edit/5
-        [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add update logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }*/
     }
 }

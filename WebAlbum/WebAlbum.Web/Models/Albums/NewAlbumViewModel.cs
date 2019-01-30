@@ -11,7 +11,7 @@ namespace WebAlbum.Web.Models.Albums
         [Display(Name = "Title")]
         [RegularExpression(@"^[a-zA-Z0-9]+$",
             ErrorMessage = "Characters are not allowed.")]
-        [Remote("CheckAlbumTitle", "Albums", 
+        [Remote("CheckAlbumTitle", "Albums", HttpMethod = "POST",
             ErrorMessage = "Album already exists.")]
         [StringLength(20, MinimumLength = 2, 
             ErrorMessage = "Value must be between 2 to 20 characters long.")]

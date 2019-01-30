@@ -37,7 +37,7 @@ namespace WebAlbum.Web.Areas.Admin.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            return View("Index");
         }
         public ActionResult _Users()
         {

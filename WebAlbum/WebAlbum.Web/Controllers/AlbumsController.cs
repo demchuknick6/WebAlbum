@@ -17,7 +17,7 @@ namespace WebAlbum.Web.Controllers
         private readonly IGenericRepository<Album> _albumRepository;
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
-        private readonly string _userId;
+        public Func<string> GetUserId;
         private const string ErrorMsg = "An error has occurred while processing your request. ";
 
         public AlbumsController(IUnitOfWork unitOfWork, 
@@ -26,23 +26,24 @@ namespace WebAlbum.Web.Controllers
             _albumRepository = albumRepository;
             _mapper = mapper;
             _unitOfWork = unitOfWork;
-            _userId = System.Web.HttpContext.Current.User.Identity.GetUserId();
+            GetUserId = () => System.Web.HttpContext.Current.User.Identity.GetUserId();
         }
 
         public ActionResult Index()
         {
-            return View();
+            return View("Index");
         }
 
         public ActionResult _Albums()
         {
             try
             {
+                var userId = GetUserId();
                 var albumsList = new AlbumListViewModel
                 {
                     Albums = _mapper.Map<IEnumerable<Album>, List<AlbumViewModel>>
                     (_albumRepository
-                        .AsQueryable().Where(u => u.UserId == _userId)
+                        .AsQueryable().Where(u => u.UserId == userId)
                         .OrderBy(p => p.DateCreated).ToList()).ToList()
                 };
                 return PartialView(albumsList);
@@ -67,13 +68,14 @@ namespace WebAlbum.Web.Controllers
             if (!ModelState.IsValid)
             {
                 TempData["result"] = ErrorMsg;
+                return RedirectToAction("_Albums");
             }
             try
             {
                 var album = _mapper.Map<Album>(model);
                 album.DateCreated = DateTime.UtcNow;
-                if (_userId != null)
-                    album.UserId = _userId;
+                if (GetUserId() != null)
+                    album.UserId = GetUserId();
                 _albumRepository.Insert(album);
                 _unitOfWork.Save();
                 TempData["result"] = $"Album {model.AlbumTitle} has been added.";
@@ -95,7 +97,7 @@ namespace WebAlbum.Web.Controllers
                 var album = _mapper.Map<Album, AlbumViewModel>(_albumRepository.GetByKey(id));
                 if (album == null)
                     return HttpNotFound();
-                if (_userId != album.UserId)
+                if (album.UserId != GetUserId())
                     return new HttpStatusCodeResult(HttpStatusCode.Forbidden);
                 return View(album);
             }
@@ -106,13 +108,25 @@ namespace WebAlbum.Web.Controllers
             }
         }
 
-        [HttpGet]
-        public JsonResult CheckAlbumTitle(string albumTitle)
+        [HttpPost]
+        public ActionResult CheckAlbumTitle(string albumTitle)
         {
-            return Json(!_albumRepository.AsQueryable()
-                    .Where(u => u.UserId == _userId)
-                    .Any(lo => lo.AlbumTitle.Equals(albumTitle)),
-                JsonRequestBehavior.AllowGet);
+            try
+            {
+                return Json(!DoesAlbumExists(albumTitle), JsonRequestBehavior.AllowGet);
+            }
+            catch (Exception)
+            {
+                return Json(false, JsonRequestBehavior.AllowGet);
+            }
+        }
+
+        private bool DoesAlbumExists(string albumTitle)
+        {
+            var userId = GetUserId();
+            return (_albumRepository.AsQueryable()
+                .Where(u => u.UserId == userId)
+                .Any(lo => lo.AlbumTitle.Equals(albumTitle)));
         }
 
         public ActionResult Edit(int? id)
@@ -129,7 +143,7 @@ namespace WebAlbum.Web.Controllers
             try
             {
                 var album = _mapper.Map<Album>(model);
-                album.UserId = _userId;
+                album.UserId = GetUserId();
                 _albumRepository.Update(album);
                 _unitOfWork.Save();
                 TempData["result"] = $"Album {model.AlbumTitle} has been edited.";       

@@ -8,19 +8,21 @@ namespace WebAlbum.Tests.Controllers
     public class HomeControllerTest
     {
         [TestMethod]
-        public void Index()
+        public void HomeIndexViewEqualIndexCshtml()
         {
             var controller = new HomeController();
             var result = controller.Index() as ViewResult;
             Assert.IsNotNull(result);
+            Assert.AreEqual("Index", result.ViewName);
         }
 
         [TestMethod]
-        public void Error()
+        public void HomeErrorStringInTempData()
         {
             var controller = new HomeController();
             var result = controller.Error() as ViewResult;
-            Assert.AreEqual("Your file exceeds the maximum upload size (4MB).", 
+            Assert.IsNotNull(result);
+            Assert.AreEqual("Your file exceeds the maximum upload size (4MB).",
                 result.TempData["error"]);
         }
     }
