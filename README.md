@@ -11,7 +11,7 @@
 * jQuery Unobtrusive Ajax;
 * NSubstitute as a mocking framework.
 
-##Running Locally
+## Running Locally
 To run WebAlbum locally, complete the following steps:
 1. Open Package Manager Console and set *WebAlbum.DataAccess* as a Default project
 2. Run the *Add-Migration **MigrationName*** command and apply this pending migration to the database using *Update-Database* command
