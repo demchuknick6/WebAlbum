@@ -64,9 +64,8 @@ namespace WebAlbum.Web.Controllers
                 }
 
                 var photo = _mapper.Map<Photo>(model);
-                photo.DateCreated = DateTime.UtcNow;
-                photo.FileName = model.PhotoTitle + DateTime.UtcNow.ToString("s") 
-                                                  + extension;
+                photo.FileName = model.PhotoTitle +
+                                 DateTime.UtcNow.ToString("s") + extension;                                            
                 photo.Content = new byte[file.ContentLength];
                 file.InputStream.Read(photo.Content, 0, file.ContentLength);
                 _photoRepository.Insert(photo);
@@ -93,7 +92,7 @@ namespace WebAlbum.Web.Controllers
                 var photos = _mapper.Map<IEnumerable<Photo>, List<PhotoViewModel>>
                 (_photoRepository
                     .AsQueryable().Where(u => u.AlbumId == albumId && u.Album.UserId == userId)
-                    .OrderBy(p => p.DateCreated).ToList()).ToList();
+                    .OrderBy(p => p.PhotoId).ToList()).ToList();
                 return PartialView(photos);
             }
             catch (Exception)
@@ -102,27 +101,65 @@ namespace WebAlbum.Web.Controllers
             }
         }
 
-        public ActionResult Edit(int? id)
+        #region EditPhotoRegion    
+        /*private IEnumerable<AlbumViewModel> OwnAlbums()
         {
-            if (id == null)
+            var albums = new List<AlbumViewModel>();
+            var userId = GetUserId();
+            albums.AddRange(_mapper.Map<IEnumerable<Album>, IEnumerable<AlbumViewModel>>
+            (_photoRepository.AsQueryable().Where(x => x.Album.UserId == userId)
+                .Select(x => x.Album).Distinct().ToList()));
+            return albums;
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(PhotoViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                ViewBag.AlbumId = new SelectList(OwnAlbums(), 
+                    "AlbumId", "AlbumTitle", model.AlbumId);
+                return View(model);
+            }
+            try
+            {
+                var photo = _mapper.Map<Photo>(model);
+                _photoRepository.Update(photo);
+                _unitOfWork.Save();
+                TempData["result"] = $"Photo {model.PhotoTitle} has been edited.";
+            }
+            catch (Exception e)
+            {
+                TempData["result"] = ErrorMsg + e.Message;
+            }
+            return RedirectToAction("Album", "Albums", 
+                new { id = model.AlbumId });
+        }*/
+        #endregion
+
+        public ActionResult Edit(int? id, int? albumId)
+        {
+            if (id == null || albumId == null)
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             try
             {
                 var photo = _photoRepository.GetByKey(id);
                 if (photo == null)
                     return HttpNotFound();
-                if (photo.Album.UserId != GetUserId())
+                if (photo.AlbumId != albumId || photo.Album.UserId != GetUserId())
                     return new HttpStatusCodeResult(HttpStatusCode.Forbidden);
                 var model = _mapper.Map<Photo, PhotoViewModel>(photo);
-                return View("Edit",model);
+                //ViewBag.AlbumId = new SelectList(OwnAlbums(),
+                //"AlbumId", "AlbumTitle", model.AlbumId);
+                return View("Edit", model);
             }
             catch (Exception e)
             {
                 TempData["result"] = ErrorMsg + e.Message;
-                return RedirectToAction("Index","Albums");
+                return RedirectToAction("Index", "Albums");
             }
         }
-        //Add Edit post
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -133,14 +170,16 @@ namespace WebAlbum.Web.Controllers
             try
             {
                 var photo = _photoRepository.GetByKey(id);
-                if (photo.AlbumId == albumId && photo.Album.UserId == GetUserId())
-                {
-                    _photoRepository.DeleteByKey(id);
-                    _unitOfWork.Save();
-                    TempData["result"] = $"Photo {photo.PhotoTitle} has been deleted.";
-                }
-                else
-                    TempData["result"] = ErrorMsg;
+                if (photo == null)
+                    return HttpNotFound();
+                if (photo.AlbumId != albumId || photo.Album.UserId != GetUserId())
+                    return new HttpStatusCodeResult(HttpStatusCode.Forbidden);
+
+                _photoRepository.DeleteByKey(id);
+                _unitOfWork.Save();
+                TempData["result"] = $"Photo {photo.PhotoTitle} has been deleted.";
+                return RedirectToAction("Album", "Albums",
+                    new { id = albumId });
             }
             catch (Exception e)
             {

@@ -178,13 +178,5 @@ namespace WebAlbum.Tests.Controllers
             Assert.IsInstanceOfType(result, typeof(HttpStatusCodeResult));
             Assert.AreEqual(400, ((HttpStatusCodeResult)result).StatusCode);
         }
-
-        [TestMethod]
-        public void DeletePostActionHasRedirectToAlbumsIndexView()
-        {
-            var result = _photosController.Delete(1,1) as RedirectToRouteResult;
-            Assert.IsNotNull(result);
-            Assert.AreEqual("Index", result.RouteValues["action"]);
-        }
     }
 }

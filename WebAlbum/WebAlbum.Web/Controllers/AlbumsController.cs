@@ -42,8 +42,7 @@ namespace WebAlbum.Web.Controllers
                 var albumsList = new AlbumListViewModel
                 {
                     Albums = _mapper.Map<IEnumerable<Album>, List<AlbumViewModel>>
-                    (_albumRepository
-                        .AsQueryable().Where(u => u.UserId == userId)
+                    (_albumRepository.AsQueryable().Where(u => u.UserId == userId)
                         .OrderBy(p => p.DateCreated).ToList()).ToList()
                 };
                 return PartialView(albumsList);

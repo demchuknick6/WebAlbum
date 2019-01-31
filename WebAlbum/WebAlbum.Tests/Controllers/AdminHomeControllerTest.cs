@@ -8,8 +8,8 @@ namespace WebAlbum.Tests.Controllers
     [TestClass]
     public class AdminHomeControllerTest
     {
-        private Web.Areas.Admin.Controllers.HomeController _homeController;
-        private IGenericRepository<ApplicationUser> _userRepository;
-        private ApplicationUserManager _userManager;
+        //private Web.Areas.Admin.Controllers.HomeController _homeController;
+        //private IGenericRepository<ApplicationUser> _userRepository;
+        //private ApplicationUserManager _userManager;
     }
 }

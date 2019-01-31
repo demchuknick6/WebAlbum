@@ -3,8 +3,12 @@
     ViewBag.Title = "Edit";
 }
 
-<h2>Edit</h2>
-<p class="text-info">@ViewBag.Message</p>
+<h2>
+    <a href="@Url.Action("Album", "Albums", new {id = Model.AlbumId})">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    </a>
+    Edit
+</h2>
 @using (Html.BeginForm("Edit", "Albums", FormMethod.Post))
 {
     @Html.AntiForgeryToken()
@@ -42,10 +46,6 @@
     </div>
 </div>
 }
-
-<div>
-        @Html.ActionLink("Back to Album", "Album", new { id = Model.AlbumId })
-    </div>
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")

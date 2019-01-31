@@ -23,22 +23,19 @@ namespace WebAlbum.Web.App_Start
     {
         public MappingProfile()
         {
+            CreateMap<ApplicationUser, RegisterViewModel>().ReverseMap();
+            CreateMap<ApplicationUser, IndexAdminViewModel>();
+            CreateMap<ApplicationUser, UserViewModel>();
+
             CreateMap<Album, NewAlbumViewModel>().ReverseMap();
             CreateMap<Album, AlbumViewModel>().ReverseMap();
             CreateMap<Album, SearchAlbumViewModel>();
 
             CreateMap<Photo, NewPhotoViewModel>().ReverseMap();
             CreateMap<Photo, PhotoViewModel>()
-                .ForMember(dest => dest.Content,
-                    o => o.MapFrom(
-                        src => "data:image/png;base64," + Convert.ToBase64String(src.Content.ToArray())));
-
-            CreateMap<PhotoViewModel, Photo>()
-                .ForMember(x => x.Content, o => o.Ignore());
-
-            CreateMap<ApplicationUser, RegisterViewModel>().ReverseMap();
-            CreateMap<ApplicationUser, IndexAdminViewModel>();
-            CreateMap<ApplicationUser, UserViewModel>();
+                .ForMember(dest => dest.Content, o => o.MapFrom(
+                    src => "data:image/png;base64," + 
+                           Convert.ToBase64String(src.Content.ToArray())));
         }
     }
 }

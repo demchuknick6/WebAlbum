@@ -99,7 +99,7 @@ namespace WebAlbum.Web.Areas.Users.Controllers
                     (_photoRepository.AsQueryable()
                         .Where(u => u.Album.AlbumTitle == albumTitle &&
                                     u.Album.User.UserName == userName && u.Album.Public)
-                        .OrderBy(p => p.DateCreated).ToList()).ToList()
+                        .OrderBy(p => p.PhotoId).ToList()).ToList()
                 };
                 return View(photoList);
             }
